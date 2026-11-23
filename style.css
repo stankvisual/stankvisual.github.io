@@ -1,0 +1,377 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101010;
+    color: #f3eee5;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.header {
+    min-height: 85px;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #29251e;
+}
+
+.logo {
+    color: #f3eee5;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #c9a45e;
+}
+
+.navigation {
+    display: flex;
+    gap: 35px;
+}
+
+.navigation a {
+    color: #d7d0c4;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #d4ae69;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.language-button,
+.menu-button {
+    background: none;
+    border: none;
+    color: #d4ae69;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 17px;
+}
+
+.menu-button {
+    display: none;
+    font-size: 25px;
+}
+
+.hero {
+    min-height: 720px;
+    padding: 100px 10%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 720px;
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow,
+.section-number {
+    color: #c9a45e;
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 7vw, 88px);
+    line-height: 1.05;
+    font-weight: normal;
+    margin-bottom: 28px;
+}
+
+.hero h1 span {
+    display: block;
+}
+
+.gold {
+    color: #c9a45e;
+    font-style: italic;
+}
+
+.hero-description {
+    max-width: 550px;
+    color: #aaa39a;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 38px;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 17px 30px;
+    border: 1px solid #c9a45e;
+    color: #e2c58e;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background: #c9a45e;
+    color: #101010;
+}
+
+.hero-decoration {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 330px;
+    height: 330px;
+    border: 1px solid #8d6b36;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 70px rgba(201, 164, 94, 0.12);
+}
+
+.monogram {
+    color: #e8dfd0;
+    font-size: 155px;
+    font-style: italic;
+    text-shadow: 0 0 35px rgba(201, 164, 94, 0.3);
+}
+
+.hero-decoration .circle {
+    position: absolute;
+    inset: 13px;
+    border: 1px solid rgba(201, 164, 94, 0.4);
+    border-radius: 50%;
+}
+
+.hero-decoration p {
+    position: absolute;
+    bottom: 65px;
+    color: #c9a45e;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.scroll-text {
+    position: absolute;
+    bottom: 35px;
+    left: 10%;
+    color: #81796d;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.section {
+    padding: 110px 12%;
+    border-top: 1px solid #29251e;
+}
+
+.section h2 {
+    font-size: clamp(35px, 5vw, 58px);
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.section > p:not(.section-number) {
+    max-width: 750px;
+    color: #aaa39a;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+.services {
+    background: #151515;
+}
+
+.service-card {
+    position: relative;
+    border: 1px solid #51432b;
+    padding: 40px;
+    margin-top: 45px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    border-color: #c9a45e;
+    transform: translateY(-5px);
+}
+
+.service-card span:first-child {
+    color: #c9a45e;
+}
+
+.service-card h3 {
+    font-size: 28px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+.service-card p {
+    color: #aaa39a;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 650px;
+}
+
+.service-arrow {
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    color: #c9a45e;
+    font-size: 25px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact > p:not(.section-number) {
+    margin: 0 auto 35px;
+}
+
+.contact-email {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 35px 0;
+}
+
+.contact-email span {
+    color: #c9a45e;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.contact-email a,
+.footer-email {
+    color: #f3eee5;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-email a {
+    font-size: clamp(19px, 3vw, 25px);
+}
+
+.contact-email a:hover,
+.footer-email:hover {
+    color: #c9a45e;
+}
+
+footer {
+    padding: 35px 8%;
+    border-top: 1px solid #29251e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+footer p {
+    color: #81796d;
+    font-size: 14px;
+}
+
+.footer-email {
+    font-size: 15px;
+}
+
+@media (max-width: 900px) {
+    .navigation {
+        gap: 18px;
+    }
+
+    .hero-decoration {
+        opacity: 0.2;
+        right: -100px;
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+        padding: 20px 6%;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: #151515;
+        padding: 25px;
+        flex-direction: column;
+        z-index: 10;
+        border-bottom: 1px solid #51432b;
+    }
+
+    .navigation.active {
+        display: flex;
+    }
+
+    .hero {
+        min-height: 650px;
+        padding: 80px 7%;
+    }
+
+    .hero h1 {
+        font-size: 51px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+    .hero-decoration {
+        width: 240px;
+        height: 240px;
+        right: -110px;
+        opacity: 0.12;
+    }
+
+    .monogram {
+        font-size: 110px;
+    }
+
+    .section {
+        padding: 80px 7%;
+    }
+
+    .service-card {
+        padding: 25px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
